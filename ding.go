@@ -91,7 +91,7 @@ func (t *Webhook) SendMessageText(text string, at ...string) error {
 }
 
 //goland:noinspection GoUnhandledErrorResult
-func (t *Webhook) sendMessageMarkdown(title, text string, at ...string) error {
+func (t *Webhook) SendMessageMarkdown(title, text string, at ...string) error {
 	msg := map[string]interface{}{
 		"msgtype": "markdown",
 		"markdown": map[string]string{
